@@ -9,21 +9,21 @@ html
 		include pages/components/header
 		.header-map.flex-container
 			.header-map-image
-				include images/map.svg
+				include images/map2.svg
 			.header-map-info
 				.info-image
-					img(src="images/ha.jpg", alt="")
+					img#image-value(src="images/ha.jpg", alt="")
 				.info-text-container
-					p.info-title Харківська ОТГ
+					p.info-title#title-value Харківська ОТГ
 					p.info-text 
 						span.info-text-name Створено
 						span.info-value#create-value Створено ЦНАП
 					p.info-text 
-						span.info-text-name Наседення
-						span.info-value#create-value 456
+						span.info-text-name Населення
+						span.info-value#population-value 456
 					p.info-text 
 						span.info-text-name Робочі місця
-						span.info-value#create-value 345
+						span.info-value#working-value 345
 		.directions
 			h2.section-header.lines-before напрямки роботи
 			ul.directions-list.flex-container.flex-justify-content-space-between
@@ -160,6 +160,7 @@ html
 				a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
 					h3.section-header.lines-before історії успіху
 		include pages/components/footer
+		script(src="scripts/data.js")
 		script(src="scripts/map.js")
 
 
