@@ -1,0 +1,165 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title U-LEAD
+		link(href='./styles/main.css', rel='stylesheet')
+	body
+		include pages/components/header
+		.header-map.flex-container
+			.header-map-image
+				include images/map.svg
+			.header-map-info
+				.info-image
+					img(src="images/ha.jpg", alt="")
+				.info-text-container
+					p.info-title Харківська ОТГ
+					p.info-text 
+						span.info-text-name Створено
+						span.info-value#create-value Створено ЦНАП
+					p.info-text 
+						span.info-text-name Наседення
+						span.info-value#create-value 456
+					p.info-text 
+						span.info-text-name Робочі місця
+						span.info-value#create-value 345
+		.directions
+			h2.section-header.lines-before напрямки роботи
+			ul.directions-list.flex-container.flex-justify-content-space-between
+				li
+					a(href="#").direction-item
+						.direction-icon
+							include images/1.svg
+						p Інституційний розвиток ЦНАПів
+				li
+					a(href="#").direction-item
+						.direction-icon
+							include images/2.svg
+						p Зовнішнє та внутрішнє оздоблення ЦНАПів
+				li
+					a(href="#").direction-item
+						.direction-icon
+							include images/3.svg
+						p Мобільне робоче місце
+				li
+					a(href="#").direction-item
+						.direction-icon
+							include images/4.svg
+						p Навчання персоналу
+				li
+					a(href="#").direction-item
+						.direction-icon
+							include images/5.svg
+						p Інформування та залучення населення
+				li
+					a(href="#").direction-item
+						.direction-icon
+							include images/6.svg
+						p Програмне забезпечення для ЦНАПів
+		.quote
+			p.quote-text.lines-before.dark.
+				Ми провели <span>відкритий конкурс</span> та відібрали <span>26 об’єднаних територіальних громад</span> (ОТГ), в яких плануємо до кінця 2017 року відкрити <span>24 ЦНАПи</span>, а також в 2-х громадах забезпечити роботу мобільного та віддаленого робочих місць адміністраторів.
+		.news-container
+			.news
+				h2.section-header.lines-before.dark новини та події
+				.news-item.flex-container.main
+					.news-item-date 20 листопада 2016
+						span 14:50
+					a(href="#").news-item-container
+						.news-item-img
+							img(src="images/new1.jpg", alt="")
+						.text-container
+							p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
+							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+				.news-item.flex-container
+					.news-item-date 20 листопада 2016
+						span 14:50
+					a(href="#").news-item-container
+						.news-item-img
+							img(src="images/new2.jpg", alt="")
+						.text-container
+							p.news-item-title Не дуже довгий заголовок новини 
+							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+				.news-item.flex-container
+					.news-item-date 20 листопада 2016
+						span 14:50
+					a(href="#").news-item-container
+						.news-item-img
+							img(src="images/new2.jpg", alt="")
+						.text-container
+							p.news-item-title Не дуже довгий заголовок новини 
+							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+				.news-item.flex-container
+					.news-item-date 20 листопада 2016
+						span 14:50
+					a(href="#").news-item-container
+						.news-item-img
+							img(src="images/new2.jpg", alt="")
+						.text-container
+							p.news-item-title Не дуже довгий заголовок новини 
+							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+				.news-item.flex-container
+					.news-item-date 20 листопада 2016
+						span 14:50
+					a(href="#").news-item-container
+						.news-item-img
+							img(src="images/new2.jpg", alt="")
+						.text-container
+							p.news-item-title Не дуже довгий заголовок новини 
+							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+			.announcements
+				h2.section-header.lines-before.dark анонси
+				a(href="#").announcements-item
+					.announcements-container.flex-container
+						.announcements-image
+							img(src="images/ann1.jpg", alt="")
+						.announcements-date.flex-container.flex-justify-content-center
+							span.flex-align-self-center 20.03
+					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
+				a(href="#").announcements-item
+					.announcements-container.flex-container
+						.announcements-image
+							img(src="images/ann2.jpg", alt="")
+						.announcements-date.flex-container.flex-justify-content-center
+							span.flex-align-self-center 20.03
+					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
+				a(href="#").announcements-item
+					.announcements-container.flex-container
+						.announcements-image
+							img(src="images/ann2.jpg", alt="")
+						.announcements-date.flex-container.flex-justify-content-center
+							span.flex-align-self-center 20.03
+					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
+				.fb-widget
+					img(src="images/fb.jpg", alt="")
+		.values
+			h2.section-header.lines-before.dark наші цінності
+			.values-list.flex-container
+				.values-item.value-opacity
+					.values-item-overlay.flex-container.flex-direction-column.flex-justify-content-flex-end
+						p.values-title Прозорість
+						p.values-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+				.values-item.value-opacity
+					.values-item-overlay.flex-container.flex-direction-column.flex-justify-content-flex-end
+						p.values-title Прозорість
+						p.values-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+				.values-item.value-opacity
+					.values-item-overlay.flex-container.flex-direction-column.flex-justify-content-flex-end
+						p.values-title Прозорість
+						p.values-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+		.about
+			.about-row.flex-container
+				a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
+					h3.section-header.lines-before історії успіху
+				a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
+					h3.section-header.lines-before команда
+			.about-row.flex-container
+				a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
+					h3.section-header.lines-before команда
+				a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
+					h3.section-header.lines-before історії успіху
+		include pages/components/footer
+		script(src="scripts/map.js")
+
+

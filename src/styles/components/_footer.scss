@@ -1,0 +1,79 @@
+footer {
+	background: #edf0f5;
+	font-family: 'DINProRegular';
+	font-size: 17px;
+
+	.footer-title {
+		font-size: 22px;
+		font-family: 'DINProBold';
+		margin-bottom: 25px;
+	}
+
+	.footer-nav {
+		padding: 70px 40px;
+		min-width: 320px;
+		border-right: 1px solid #e4e7eb;
+
+		.footer-nav-item {
+			margin-bottom: 20px;
+
+			a {
+				color: #000;
+				&:hover {
+					color: $color-blue;
+				}
+			}
+
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.footer-project {
+		padding: 70px 40px;
+
+		img {
+			width: 100%;
+		}
+
+		.footer-project-text {
+			margin-top: 25px;
+			color: rgba(0, 0, 0, 0.6);
+		}
+
+		.footer-auth {
+			color: rgba(0, 0, 0, 0.6);
+			&:hover {
+				color: $color-blue;
+			}
+		}
+	}
+
+	.footer-contacts {
+		padding: 70px 40px;
+		min-width: 320px;
+		border-left: 1px solid #e4e7eb;
+
+		.footer-contact-link {
+			display: block;
+			color: #469cfc;
+			margin-bottom: 25px;
+
+			span {
+				font-family: 'DINProRegular';
+				color: #000;
+				margin-left: 15px;
+			}
+		}
+
+		p {
+			a {
+				color: #469cfc;
+				display: block;
+				text-decoration: underline;
+			}
+		}
+	}
+}
