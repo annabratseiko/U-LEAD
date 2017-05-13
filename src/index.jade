@@ -7,24 +7,30 @@ html
 		link(href='./styles/main.css', rel='stylesheet')
 	body
 		include pages/components/header
-		.header-map.flex-container
-			.header-map-image
+		section.header-map.flex-container
+			.header-map-image.flex-container.flex-justify-content-center
 				include images/map2.svg
-			.header-map-info
-				.info-image
-					img#image-value(src="images/ha.jpg", alt="")
-				.info-text-container
-					p.info-title#title-value Харківська ОТГ
-					p.info-text 
-						span.info-text-name Створено
-						span.info-value#create-value Створено ЦНАП
-					p.info-text 
-						span.info-text-name Населення
-						span.info-value#population-value 456
-					p.info-text 
-						span.info-text-name Робочі місця
-						span.info-value#working-value 345
-		.directions
+			.header-map-sidebar
+				.hover-top-triangle
+				.hover-bottom-triangle
+				.header-sidebar-text
+					p.top-lines.
+						Ми провели <span>відкритий конкурс</span> та відібрали <span>26 об’єднаних територіальних громад</span> (ОТГ), в яких плануємо до кінця 2017 року відкрити <span>24 ЦНАПи</span>, а також в 2-х громадах забезпечити роботу мобільного та віддаленого робочих місць адміністраторів.
+				.header-map-info
+					.info-image
+						img#image-value(src="images/ha.jpg", alt="")
+					.info-text-container
+						p.info-title#title-value Харківська ОТГ
+						p.info-text 
+							span.info-text-name Створено
+							span.info-value#create-value Створено ЦНАП
+						p.info-text 
+							span.info-text-name Населення
+							span.info-value#population-value 456
+						p.info-text 
+							span.info-text-name Робочі місця
+							span.info-value#working-value 345
+		section.directions
 			h2.section-header.lines-before напрямки роботи
 			ul.directions-list.flex-container.flex-justify-content-space-between
 				li
@@ -57,11 +63,11 @@ html
 						.direction-icon
 							include images/6.svg
 						p Програмне забезпечення для ЦНАПів
-		.quote
+		section.quote
 			p.quote-text.lines-before.dark.
 				Ми провели <span>відкритий конкурс</span> та відібрали <span>26 об’єднаних територіальних громад</span> (ОТГ), в яких плануємо до кінця 2017 року відкрити <span>24 ЦНАПи</span>, а також в 2-х громадах забезпечити роботу мобільного та віддаленого робочих місць адміністраторів.
-		.news-container
-			.news
+		section.news-container
+			section.news
 				h2.section-header.lines-before.dark новини та події
 				.news-item.flex-container.main
 					.news-item-date 20 листопада 2016
@@ -108,7 +114,7 @@ html
 						.text-container
 							p.news-item-title Не дуже довгий заголовок новини 
 							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
-			.announcements
+			section.announcements
 				h2.section-header.lines-before.dark анонси
 				a(href="#").announcements-item
 					.announcements-container.flex-container
@@ -133,7 +139,7 @@ html
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
 				.fb-widget
 					img(src="images/fb.jpg", alt="")
-		.values
+		section.values
 			h2.section-header.lines-before.dark наші цінності
 			.values-list.flex-container
 				.values-item.value-opacity
@@ -148,17 +154,17 @@ html
 					.values-item-overlay.flex-container.flex-direction-column.flex-justify-content-flex-end
 						p.values-title Прозорість
 						p.values-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
-		.about
-			.about-row.flex-container
-				a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
-					h3.section-header.lines-before історії успіху
-				a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
-					h3.section-header.lines-before команда
-			.about-row.flex-container
-				a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
-					h3.section-header.lines-before команда
-				a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
-					h3.section-header.lines-before історії успіху
+			.about
+				.about-row.flex-container
+					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
+						h3.section-header.lines-before історії успіху
+					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
+						h3.section-header.lines-before команда
+				.about-row.flex-container
+					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
+						h3.section-header.lines-before команда
+					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
+						h3.section-header.lines-before історії успіху
 		include pages/components/footer
 		script(src="scripts/data.js")
 		script(src="scripts/map.js")

@@ -3,48 +3,125 @@
 
 	.header-map-image {
 		flex: 1;
-		padding-left: 40px;
 	}
 
-	.header-map-info {
+	.header-map-sidebar {
 		width: 30%;
+		min-width: 375px;
 		background: #f7f8f9;
+		position: relative;
 
-		.info-image {
-			max-height: 270px;
-			overflow: hidden;
-			img {
-				width: 100%;
+		.hover-top-triangle {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 100px;
+			background: #e5e9ed;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: -17px;
+				width: 0;
+				height: 0;
+				border-top: 17px solid #e5e9ed;
+				border-right: 20px solid transparent;
 			}
 		}
 
-		.info-text-container {
-			padding: 0 50px 0 35px;
+		.hover-bottom-triangle {
+			display: none;
+			position: absolute;
+			top: 134px;
+			bottom: 0;
+			left: 0;
+			width: 20px;
+			background: #e5e9ed;
 
-			.info-title {
-				font-size: 24px;
-				font-family: 'AvenirNextBold';
-				margin: 25px 0;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: -17px;
+				width: 0;
+				height: 0;
+				border-bottom: 17px solid #e5e9ed;
+				border-right: 20px solid transparent;
 			}
+		}
 
-			.info-text {
-				border-top: 1px solid #e4e5e5;
-				font-size: 16px;
-				line-height: 50px;
-				color: rgba(0, 0, 0, 0.6);
+		.header-sidebar-text {
+			display: block;
+			padding: 50px 40px;
 
-				.info-text-name {
-					display: inline-block;
-					min-width: 130px;
-				}
+			p {
+				font-size: 20px;
 
-				.info-value {
+				span {
 					font-family: 'AvenirNextBold';
 				}
+			}
+		}
 
-				&:last-of-type {
-					border-bottom: 1px solid #e4e5e5;
+		.header-map-info {
+			display: none;
+
+			.info-image {
+				max-height: 270px;
+				overflow: hidden;
+				padding-right: 30px;
+				img {
+					width: 100%;
 				}
+			}
+
+			.info-text-container {
+				padding: 0 50px;
+
+				.info-title {
+					font-size: 24px;
+					font-family: 'AvenirNextBold';
+					margin: 25px 0;
+				}
+
+				.info-text {
+					border-top: 1px solid #e4e5e5;
+					font-size: 16px;
+					line-height: 50px;
+					color: rgba(0, 0, 0, 0.6);
+
+					.info-text-name {
+						display: inline-block;
+						min-width: 130px;
+					}
+
+					.info-value {
+						font-family: 'AvenirNextBold';
+					}
+
+					&:last-of-type {
+						border-bottom: 1px solid #e4e5e5;
+					}
+				}
+			}			
+		}
+
+		&.hover {
+			min-width: 395px;
+
+			.header-sidebar-text {
+				display: none;
+			}
+
+			.header-map-info,
+			.hover-top-triangle,
+			.hover-bottom-triangle {
+				display: block;
 			}
 		}
 	}
@@ -61,6 +138,7 @@
 			flex: 1;
 
 			.direction-item {
+				width: 100%;
 				display: inline-block;
 				text-align: center;
 				padding: 0 5px;
@@ -236,6 +314,12 @@
 				color: #000;
 				margin-top: 20px;
 			}
+
+			&:hover {
+				.announcements-title {
+					color: $color-blue;
+				}
+			}
 		}
 
 		.fb-widget {
@@ -249,7 +333,7 @@
 }
 
 .values {
-	padding: 100px 0;
+	padding-top: 100px;
 
 	.section-header {
 		margin: 0 40px;
@@ -306,6 +390,8 @@
 }
 
 .about {
+	padding-top: 100px;
+
 	.about-item {
 		flex: 1;
 		height: 350px;

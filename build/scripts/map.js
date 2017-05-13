@@ -1,10 +1,12 @@
 var regions = document.querySelectorAll('.mapst0');
 var points = document.querySelectorAll('.mapst1');
+var sidebar = document.querySelector('.header-map-sidebar');
 var createDom = document.getElementById('create-value');
 var populationDom = document.getElementById('population-value');
 var workingDom = document.getElementById('working-value');
 var imageDom = document.getElementById('image-value');
 var titleDom = document.getElementById('title-value');
+var timer;
 
 for (let i = 0; i < regions.length; i++) {
 	regions[i].onclick = function() {
@@ -12,7 +14,14 @@ for (let i = 0; i < regions.length; i++) {
 		redirectTo(regionsData, this);
 	}
 	regions[i].onmouseover = function() {
+		clearTimeout(timer);
+		sidebar.classList.add('hover');
 		setInfo(regionsData, this);
+	}
+	regions[i].onmouseleave = function() {
+		timer = setTimeout(function(){
+			sidebar.classList.remove('hover');
+		}, 100);
 	}
 }
 
@@ -22,7 +31,14 @@ for (let i = 0; i < points.length; i++) {
 		redirectTo(pointsData, this);
 	}
 	points[i].onmouseover = function() {
+		clearTimeout(timer);
+		sidebar.classList.add('hover');
 		setInfo(pointsData, this);
+	}
+	points[i].onmouseleave = function() {
+		timer = setTimeout(function(){
+			sidebar.classList.remove('hover');
+		}, 100);
 	}
 }
 
