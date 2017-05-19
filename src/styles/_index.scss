@@ -290,6 +290,7 @@
 
 				.announcements-image {
 					flex: 1;
+					font-size: 0;
 
 					img {
 						width: 100%;
@@ -298,7 +299,7 @@
 				.announcements-date {
 					flex: 1;
 					background: #e3e6ea;
-					margin-bottom: 4px;
+					// margin-bottom: 4px;
 
 					span {
 						font-size: 32px;

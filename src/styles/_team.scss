@@ -1,0 +1,64 @@
+.team-header-section {
+	min-height: 400px;
+	width: 100%;
+	background-image: url("../images/bg3.jpg");
+	background-size: cover;
+	color: #fff;
+
+	h2 {
+		font-size: 98px;
+		font-family: 'DINProBold';
+	}
+
+	p {
+		font-size: 28px;
+	}
+}
+
+.team-section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+	flex-wrap: wrap;
+
+	.team-item {
+		padding: 40px 30px;
+
+		.team-item-image {
+			width: 235px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.team-item-text {
+			text-align: center;
+			font-family: 'AvenirNextMedium';
+			font-size: 16px;
+
+			.team-item-name {
+				margin-top: 25px;
+				font-family: 'AvenirNextBold';
+				font-size: 20px;
+			}
+
+			.team-item-position {
+				margin-top: 10px;
+			}
+
+			a {
+				display: block;
+				color: #2797c9;
+
+				&:first-of-type {
+					margin-top: 10px;
+				}
+			}
+			
+		}
+
+
+	}
+}

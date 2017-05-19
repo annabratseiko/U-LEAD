@@ -1,0 +1,68 @@
+.announcements-header-section {
+	min-height: 400px;
+	width: 100%;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+
+	h2 {
+		font-size: 98px;
+		color: #fff;
+		font-family: 'DINProBold';
+	}
+}
+
+.announcements-section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 100px 0 200px;
+
+	.announcements-column {
+		width: 50%;
+		float: left;
+		padding: 0 30px;
+
+		.announcements-item {
+			width: 100%;
+			display: block;
+			margin-top: 70px;
+
+			.announcements-container {
+				overflow: hidden;
+
+				.announcements-image {
+					flex: 1;
+					font-size: 0;
+
+					img {
+						width: 100%;
+					}
+				}
+				.announcements-date {
+					flex: 1;
+					background: #e3e6ea;
+
+					span {
+						font-size: 32px;
+						color: #fff;
+						font-family: 'AvenirNextBold';
+					}
+				}
+			}
+
+			.announcements-title {
+				font-size: 20px;
+				font-family: 'AvenirNextBold';
+				color: #000;
+				margin-top: 20px;
+			}
+
+			&:hover {
+				.announcements-title {
+					color: $color-blue;
+				}
+			}
+		}
+	}
+}
