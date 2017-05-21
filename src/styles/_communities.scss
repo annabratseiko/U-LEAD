@@ -1,0 +1,66 @@
+.communities-header-section {
+	min-height: 400px;
+	width: 100%;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+
+	h2 {
+		font-size: 98px;
+		color: #fff;
+		font-family: 'DINProBold';
+	}
+}
+
+.communities-section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 100px 0;
+
+	.communities-column {
+		width: 50%;
+		float: left;
+		padding: 30px;
+
+		.communities-item {
+			margin-bottom: 70px;
+			
+			img {
+				width: 100%;
+			}
+
+			.communities-info {
+				overflow: hidden;
+
+				h2 {
+					font-size: 24px;
+					color: #000;
+					margin: 35px 0;
+					font-family: 'DINProBold';
+				}
+
+				.info-text {
+					border-top: 1px solid rgba(0, 0, 0, 0.1);
+					font-size: 16px;
+					line-height: 50px;
+					color: #000;
+
+					.info-text-name {
+						display: inline-block;
+						min-width: 245px;
+						opacity: 0.6;
+					}
+
+					.info-value {
+						font-family: 'AvenirNextBold';
+					}
+
+					&:last-of-type {
+						border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+					}
+				}
+			}
+		}
+	}
+}

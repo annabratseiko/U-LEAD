@@ -9,10 +9,10 @@ html
 		include components/header
 		section.direction-header-section.flex-container.flex-direction-column.flex-align-items-center.flex-justify-content-space-between
 			.direction-header-title.flex-container.flex-direction-column.flex-align-items-center.flex-justify-content-center
-				.direction-header-icon
+				.direction-header-icon.animate
 					include ../images/2.svg
 				h2 Зовнiшне та внутрiшне озоблення ЦНАПiв
-			.direction-header-nav.flex-container
+			.direction-header-nav.flex-container.animate
 				.direction-header-prev.flex-container.flex-align-items-center
 					a(href="#") 
 						i.fa.fa-angle-left(aria-hidden="true")
@@ -24,26 +24,26 @@ html
 
 		section.directions-section
 			.directions-column
-				h2.section-header.lines-before.dark про напрям
-				p.direction-text.
+				h2.section-header.lines-before.dark.animate про напрям
+				p.direction-text.animate.
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus pulvinar ligula, vitae hendrerit felis. Phasellus vehicula odio placerat erat malesuada tempor. Maecenas rhoncus nibh sed condimentum dapibus. Praesent pulvinar ornare a iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus pulvinar ligula, vitae hendrerit felis. Phasellus vehicula odio placerat erat malesuada tempor. Maecenas rhoncus nibh sed condimentum dapibus. Praesent pulvinar ornare a iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus pulvinar ligula, vitae hendrerit felis. Phasellus vehicula odio placerat erat malesuada tempor. Maecenas rhoncus nibh sed condimentum dapibus. Praesent pulvinar ornare a iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus pulvinar ligula, vitae hendrerit felis. Phasellus vehicula odio placerat erat malesuada tempor. Maecenas rhoncus nibh sed condimentum dapibus. Praesent pulvinar ornare a iaculis.
 			.directions-column
-				h2.section-header.lines-before.dark новини напряму
-				a(href="#").news-item-container.news-item.flex-container
+				h2.section-header.lines-before.dark.animate новини напряму
+				a(href="#").news-item-container.news-item.flex-container.animate
 					.news-item-img
 						img(src="../images/new2.jpg", alt="")
 					.text-container
 						p.news-item-title Не дуже довгий заголовок новини 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2017, 14:50
-				a(href="#").news-item-container.news-item.flex-container
+				a(href="#").news-item-container.news-item.flex-container.animate
 					.news-item-img
 						img(src="../images/new2.jpg", alt="")
 					.text-container
 						p.news-item-title Не дуже довгий заголовок новини 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2017, 14:50
-				a(href="#").news-item-container.news-item.flex-container
+				a(href="#").news-item-container.news-item.flex-container.animate
 					.news-item-img
 						img(src="../images/new2.jpg", alt="")
 					.text-container
@@ -55,3 +55,5 @@ html
 					span Більше новин
 		
 		include components/footer
+		script(src="../scripts/scrollreveal.min.js")
+		script(src="../scripts/animation.js")

@@ -1,0 +1,86 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width,height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title U-LEAD
+		link(href='../styles/main.css', rel='stylesheet')
+	body
+		include components/header
+		section.community-header-section
+			.community-header-info
+				h2.animate Харківська ОТГ	
+				p.info-text.animate 
+					span.info-text-name Статус
+					span.info-value Створено ЦНАП
+				p.info-text.animate
+					span.info-text-name Населення
+					span.info-value 456
+				p.info-text.animate 
+					span.info-text-name Робочих місць у ЦНАПі
+					span.info-value 17
+			a(href="#").community-scroll-button.fa.fa-angle-down
+		section.community-section
+			.community-column.about-community
+				h2.section-header.lines-before.dark.animate про громаду
+				p.community-text.animate.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus pulvinar ligula, vitae hendrerit felis. Phasellus vehicula odio placerat erat malesuada tempor. Maecenas rhoncus nibh sed condimentum dapibus. Praesent pulvinar ornare a iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempus pulvinar ligula, vitae hendrerit felis. Phasellus 
+				.community-slider.animate
+					img(src="../images/slide.jpg", alt="")
+					//- .swiper-container
+					//- 	.swiper-wrapper
+					//- 		.swiper-slide(style="background:red;")
+					//- 			//- img(src="../images/slide.jpg", alt="")
+					//- 		.swiper-slide(style="background:blue;")
+					//- 			//- img(src="../images/slide.jpg", alt="")
+					//- 		.swiper-slide(style="background:green;")
+					//- 			//- img(src="../images/slide.jpg", alt="")
+					//- 	.swiper-button-prev
+					//- 	.swiper-button-next
+				.community-contacts
+					h2.section-header.lines-before.dark.animate контакти
+					.community-contacts-item.animate
+						span Адреса
+						a(href="#") вул. Академiка Проскури, 45, офiс 2
+					.community-contacts-item.animate
+						span Телефон
+						a(href="tel:+380695484265") +38 069 548 4265,  
+						a(href="tel:+380695484265") +38 069 548 4265
+					.community-contacts-item.animate
+						span E-mail
+						a(href="mailto:hello@otg-kh.com.ua") hello@otg-kh.com.ua
+					.community-contacts-item.animate
+						span Графік роботи
+						a(href="#") Пн—Пт 9:00—18:00, Сб та Вс – вихiднi
+			.community-column
+				h2.section-header.lines-before.dark.animate новини напряму
+				a(href="#").news-item-container.news-item.flex-container.animate
+					.news-item-img
+						img(src="../images/new2.jpg", alt="")
+					.text-container
+						p.news-item-title Не дуже довгий заголовок новини 
+						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+						p.news-item-date 20 листопада 2017, 14:50
+				a(href="#").news-item-container.news-item.flex-container.animate
+					.news-item-img
+						img(src="../images/new2.jpg", alt="")
+					.text-container
+						p.news-item-title Не дуже довгий заголовок новини 
+						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+						p.news-item-date 20 листопада 2017, 14:50
+				a(href="#").news-item-container.news-item.flex-container.animate
+					.news-item-img
+						img(src="../images/new2.jpg", alt="")
+					.text-container
+						p.news-item-title Не дуже довгий заголовок новини 
+						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+						p.news-item-date 20 листопада 2017, 14:50
+				a(href="#").load-more-link.animate
+					i.fa.fa-plus(aria-hidden="true")
+					span Більше новин
+		
+		include components/footer
+		script(src="../scripts/scrollreveal.min.js")
+		script(src="../scripts/swiper.min.js")
+		script(src="../scripts/animation.js")
+		script(src="../scripts/main.js")

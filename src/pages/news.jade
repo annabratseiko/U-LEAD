@@ -8,24 +8,24 @@ html
 	body
 		include components/header
 		section.news-header-section.flex-container.flex-align-items-center.flex-justify-content-center
-			h2 Новини та події
+			h2.animate Новини та події
 		section.news-section
 			.news-column
-				a(href="#").news-item
+				a(href="#").news-item.animate
 					.news-item-img
 						img(src="../images/new1.jpg", alt="")
 					.text-container
 						p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2016, 15:50
-				a(href="#").news-item
+				a(href="#").news-item.animate
 					.news-item-img
 						img(src="../images/new1.jpg", alt="")
 					.text-container
 						p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2016, 15:50
-				a(href="#").news-item
+				a(href="#").news-item.animate
 					.news-item-img
 						img(src="../images/new1.jpg", alt="")
 					.text-container
@@ -34,31 +34,33 @@ html
 						p.news-item-date 20 листопада 2016, 15:50
 
 			.news-column
-				a(href="#").news-item
+				a(href="#").news-item.animate
 					.news-item-img
 						img(src="../images/new1.jpg", alt="")
 					.text-container
 						p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2016, 15:50
-				a(href="#").news-item
+				a(href="#").news-item.animate
 					.news-item-img
 						img(src="../images/new1.jpg", alt="")
 					.text-container
 						p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2016, 15:50
-				a(href="#").news-item
+				a(href="#").news-item.animate
 					.news-item-img
 						img(src="../images/new1.jpg", alt="")
 					.text-container
 						p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
 						p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 						p.news-item-date 20 листопада 2016, 15:50
-		.news-pagination
+		.news-pagination.animate
 			a(href="#") 1
 			a(href="#") 2
 			a(href="#") 3
 			a(href="#") 4
 		
 		include components/footer
+		script(src="../scripts/scrollreveal.min.js")
+		script(src="../scripts/animation.js")

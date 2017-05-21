@@ -8,24 +8,24 @@ html
 	body
 		include components/header
 		section.announcements-header-section.flex-container.flex-align-items-center.flex-justify-content-center
-			h2 Анонси
+			h2.animate Анонси
 		section.announcements-section
 			.announcements-column
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="../images/ann1.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="../images/ann2.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="../images/ann2.jpg", alt="")
@@ -33,21 +33,21 @@ html
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
 			.announcements-column
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="../images/ann1.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="../images/ann2.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="../images/ann2.jpg", alt="")
@@ -55,3 +55,5 @@ html
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
 		include components/footer
+		script(src="../scripts/scrollreveal.min.js")
+		script(src="../scripts/animation.js")

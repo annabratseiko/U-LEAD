@@ -1,0 +1,81 @@
+.publication-header-section {
+	background: #e5e9ed;
+	padding: 0 20px;
+
+	.puclication-header-info {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 100px 0;
+
+		h2 {
+			font-size: 58px;
+			font-family: 'DINProBold';
+		}
+
+		.publication-header-date {
+			font-size: 16px;
+			padding-bottom: 20px;
+			margin-top: 40px;
+			color: rgba(0, 0, 0, 0.2);
+			border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		}
+
+		.publication-header-text {
+			font-size: 26px;
+			margin-top: 40px;
+		}
+	}
+}
+
+.publication-section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+
+	.publication-text-block {
+		max-width: 700px;
+		margin: 0 auto;
+
+		h3 {
+			font-size: 44px;
+			font-family: 'AvenirNextBold';
+		}
+
+		h3 {
+			font-size: 34px;
+			font-family: 'AvenirNextBold';
+			margin-top: 50px;
+		}
+
+		h4 {
+			font-size: 24px;
+			font-family: 'AvenirNextBold';
+			margin-top: 50px;
+		}
+
+		p {
+			font-size: 21px;
+			line-height: 30px;
+			margin-top: 50px;
+		}
+	}
+
+	.publication-image {
+		padding-top: 50px;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.publication-share {
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 90px;
+
+	span {
+		font-size: 24px;
+		font-family: 'AvenirNextBold';
+	}
+}

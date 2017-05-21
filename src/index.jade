@@ -8,9 +8,9 @@ html
 	body
 		include pages/components/header
 		section.header-map.flex-container
-			.header-map-image.flex-container.flex-justify-content-center
+			.header-map-image.flex-container.flex-justify-content-center.animate
 				include images/map2.svg
-			.header-map-sidebar
+			.header-map-sidebar.animate
 				.hover-top-triangle
 				.hover-bottom-triangle
 				.header-sidebar-text
@@ -30,7 +30,7 @@ html
 						p.info-text 
 							span.info-text-name Робочі місця
 							span.info-value#working-value 345
-		section.directions
+		section.directions.animate
 			h2.section-header.lines-before напрямки роботи
 			ul.directions-list.flex-container.flex-justify-content-space-between
 				li
@@ -64,12 +64,12 @@ html
 							include images/6.svg
 						p Програмне забезпечення для ЦНАПів
 		section.quote
-			p.quote-text.lines-before.dark.
+			p.quote-text.lines-before.dark.animate.
 				Ми провели <span>відкритий конкурс</span> та відібрали <span>26 об’єднаних територіальних громад</span> (ОТГ), в яких плануємо до кінця 2017 року відкрити <span>24 ЦНАПи</span>, а також в 2-х громадах забезпечити роботу мобільного та віддаленого робочих місць адміністраторів.
 		section.news-container
 			section.news
-				h2.section-header.lines-before.dark новини та події
-				.news-item.flex-container.main
+				h2.section-header.lines-before.dark.animate новини та події
+				.news-item.flex-container.main.animate
 					.news-item-date 20 листопада 2016
 						span 14:50
 					a(href="#").news-item-container
@@ -78,7 +78,7 @@ html
 						.text-container
 							p.news-item-title Довгий або не дуже довгий заголовок новини заголовок 
 							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
-				.news-item.flex-container
+				.news-item.flex-container.animate
 					.news-item-date 20 листопада 2016
 						span 14:50
 					a(href="#").news-item-container
@@ -87,7 +87,7 @@ html
 						.text-container
 							p.news-item-title Не дуже довгий заголовок новини 
 							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
-				.news-item.flex-container
+				.news-item.flex-container.animate
 					.news-item-date 20 листопада 2016
 						span 14:50
 					a(href="#").news-item-container
@@ -96,7 +96,7 @@ html
 						.text-container
 							p.news-item-title Не дуже довгий заголовок новини 
 							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
-				.news-item.flex-container
+				.news-item.flex-container.animate
 					.news-item-date 20 листопада 2016
 						span 14:50
 					a(href="#").news-item-container
@@ -105,7 +105,7 @@ html
 						.text-container
 							p.news-item-title Не дуже довгий заголовок новини 
 							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
-				.news-item.flex-container
+				.news-item.flex-container.animate
 					.news-item-date 20 листопада 2016
 						span 14:50
 					a(href="#").news-item-container
@@ -115,33 +115,33 @@ html
 							p.news-item-title Не дуже довгий заголовок новини 
 							p.news-item-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 			section.announcements
-				h2.section-header.lines-before.dark анонси
-				a(href="#").announcements-item
+				h2.section-header.lines-before.dark.animate анонси
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="images/ann1.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="images/ann2.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				a(href="#").announcements-item
+				a(href="#").announcements-item.animate
 					.announcements-container.flex-container
 						.announcements-image
 							img(src="images/ann2.jpg", alt="")
 						.announcements-date.flex-container.flex-justify-content-center
 							span.flex-align-self-center 20.03
 					p.announcements-title Не дуже довгий заголовок новини або достатньо довгий заголовок
-				.fb-widget
+				.fb-widget.animate
 					img(src="images/fb.jpg", alt="")
 		section.values
-			h2.section-header.lines-before.dark наші цінності
-			.values-list.flex-container
+			h2.section-header.lines-before.dark.animate наші цінності
+			.values-list.flex-container.animate
 				.values-item.value-opacity
 					.values-item-overlay.flex-container.flex-direction-column.flex-justify-content-flex-end
 						p.values-title Прозорість
@@ -156,16 +156,18 @@ html
 						p.values-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 			.about
 				.about-row.flex-container
-					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
+					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before історії успіху
-					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
+					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before команда
 				.about-row.flex-container
-					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end
+					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before команда
-					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end
+					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before історії успіху
 		include pages/components/footer
+		script(src="scripts/scrollreveal.min.js")
+		script(src="scripts/animation.js")
 		script(src="scripts/data.js")
 		script(src="scripts/map.js")
 
