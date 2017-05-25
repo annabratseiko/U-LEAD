@@ -8,22 +8,22 @@ var imageDom = document.getElementById('image-value');
 var titleDom = document.getElementById('title-value');
 var timer;
 
-for (let i = 0; i < regions.length; i++) {
-	regions[i].onclick = function() {
-		removeActiveClass(regions, this);
-		redirectTo(regionsData, this);
-	}
-	regions[i].onmouseover = function() {
-		clearTimeout(timer);
-		sidebar.classList.add('hover');
-		setInfo(regionsData, this);
-	}
-	regions[i].onmouseleave = function() {
-		timer = setTimeout(function(){
-			sidebar.classList.remove('hover');
-		}, 100);
-	}
-}
+// for (let i = 0; i < regions.length; i++) {
+// 	regions[i].onclick = function() {
+// 		removeActiveClass(regions, this);
+// 		redirectTo(regionsData, this);
+// 	}
+// 	regions[i].onmouseover = function() {
+// 		clearTimeout(timer);
+// 		sidebar.classList.add('hover');
+// 		setInfo(regionsData, this);
+// 	}
+// 	regions[i].onmouseleave = function() {
+// 		timer = setTimeout(function(){
+// 			sidebar.classList.remove('hover');
+// 		}, 100);
+// 	}
+// }
 
 for (let i = 0; i < points.length; i++) {
 	points[i].onclick = function() {

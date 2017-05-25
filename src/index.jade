@@ -13,9 +13,14 @@ html
 			.header-map-sidebar.animate
 				.hover-top-triangle
 				.hover-bottom-triangle
+				.padding-block
+				.single-triangle
 				.header-sidebar-text
-					p.top-lines.
-						Ми провели <span>відкритий конкурс</span> та відібрали <span>26 об’єднаних територіальних громад</span> (ОТГ), в яких плануємо до кінця 2017 року відкрити <span>24 ЦНАПи</span>, а також в 2-х громадах забезпечити роботу мобільного та віддаленого робочих місць адміністраторів.
+					.header-text-container
+						p.top-lines.
+							<span>24 ЦНАПи</span> до кінця 2017 року
+					.header-sidebar-logo.flex-container.flex-justify-content-center
+						img(src="../images/sb-logo.png", alt="")
 				.header-map-info
 					.info-image
 						img#image-value(src="images/ha.jpg", alt="")
@@ -30,6 +35,7 @@ html
 						p.info-text 
 							span.info-text-name Робочі місця
 							span.info-value#working-value 345
+			a(href="#").header-map-scroll-button.fa.fa-angle-down
 		section.directions.animate
 			h2.section-header.lines-before напрямки роботи
 			ul.directions-list.flex-container.flex-justify-content-space-between
@@ -158,13 +164,17 @@ html
 				.about-row.flex-container
 					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before історії успіху
+						p.about-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before команда
+						p.about-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 				.about-row.flex-container
 					a(href="#").about-item.about-story.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before команда
+						p.about-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 					a(href="#").about-item.about-team.flex-container.flex-direction-column.flex-justify-content-flex-end.animate
 						h3.section-header.lines-before історії успіху
+						p.about-text Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
 		include pages/components/footer
 		script(src="scripts/scrollreveal.min.js")
 		script(src="scripts/animation.js")

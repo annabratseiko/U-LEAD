@@ -1,5 +1,8 @@
 .header-map {
-	background: #e5e9ed;
+	background-color: #e5e9ed;
+	background-image: url(../images/map-bg.jpg);
+	background-size: cover; 
+	position: relative;
 
 	.header-map-image {
 		flex: 1;
@@ -8,8 +11,20 @@
 	.header-map-sidebar {
 		width: 30%;
 		min-width: 375px;
-		background: #f7f8f9;
+		background-color: #f7f8f9;
 		position: relative;
+
+		.single-triangle {
+			display: none;
+			position: absolute;
+			top: 165px;
+			left: -20px;
+			width: 0;
+			height: 0;
+			border-top: 15px solid transparent;
+			border-right: 20px solid #f7f8f9;
+			border-bottom: 15px solid transparent;
+		}
 
 		.hover-top-triangle {
 			display: none;
@@ -18,7 +33,8 @@
 			left: 0;
 			width: 20px;
 			height: 100px;
-			background: #e5e9ed;
+			background-color: #e5e9ed;
+			background-image: url(../images/map-bg.jpg);
 
 			&:after {
 				content: '';
@@ -40,7 +56,9 @@
 			bottom: 0;
 			left: 0;
 			width: 20px;
-			background: #e5e9ed;
+			background-color: #e5e9ed;
+			background-image: url(../images/map-bg.jpg);
+			background-size: cover;
 
 			&:after {
 				content: '';
@@ -55,17 +73,41 @@
 			}
 		}
 
+		.padding-block {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 100%;
+			background-color: #e5e9ed;
+			background-image: url(../images/map-bg.jpg);
+			background-size: cover;
+		}	
 		.header-sidebar-text {
 			display: block;
-			padding: 50px 40px;
 
-			p {
-				font-size: 20px;
+			.header-text-container {
+				padding: 50px 40px;
+				padding-left: 70px; 
+				padding-bottom: 100px;
+				background-image: url(../images/sb-bg.jpg);
+				background-size: cover;
+				
+				p {
+					color: #fff;
+					font-size: 50px;
 
-				span {
-					font-family: 'AvenirNextBold';
+					span {
+						font-family: 'AvenirNextBold';
+					}
 				}
 			}
+
+			.header-sidebar-logo {
+				padding-top: 20px;
+			}
+
 		}
 
 		.header-map-info {
@@ -112,18 +154,37 @@
 		}
 
 		&.hover {
-			min-width: 395px;
-
-			.header-sidebar-text {
+			.header-sidebar-text,
+			.padding-block {
 				display: none;
 			}
 
 			.header-map-info,
-			.hover-top-triangle,
-			.hover-bottom-triangle {
+			.single-triangle {
 				display: block;
 			}
+
+			// .hover-top-triangle,
+			// .hover-bottom-triangle {
+			// 	display: block;
+			// }
 		}
+	}
+
+	.header-map-scroll-button {
+		width: 36px;
+		height: 36px;
+		position: absolute;
+		left: 50%;
+		bottom: 30px;
+		margin-left: -18px;
+		border-radius: 50%;
+		background: #ffe206;
+		color: #fff;
+		line-height: 37px;
+		text-align: center;
+		font-size: 24px;
+		animation: arrow-move 0.7s infinite ease-out;
 	}
 }
 
@@ -145,18 +206,16 @@
 				color: #fff;
 
 				.direction-icon {
-					width: 150px;
-					height: 150px;
+					width: 170px;
+					height: 170px;
 					border-radius: 50%;
 					border: 1px solid rgba(255, 255, 255, 0.3);
 					margin: 0 auto;
-					line-height: 150px;
-					font-size: 40px;
 					transition: 0.3s;
 
 					svg {
-						width: 75px;
-						margin-top: -25px;
+						width: 90px;
+						margin-top: -15px;
 						fill: #fff;
 					}
 				}
@@ -196,6 +255,11 @@
 		span {
 			font-family: 'AvenirNextBold';
 		}
+
+		&:before,
+		&:after {
+			bottom: 5px;
+		}
 	}
 }
 
@@ -205,11 +269,12 @@
 
 	.news {
 		float: left;
-		width: 70%;
+		width: 65%;
 
 		.news-item {
 			overflow: hidden;
-			margin-top: 70px;
+			padding: 40px 0;
+			border-top: 1px solid #f8f9fa;
 
 			.news-item-date {
 				width: 180px;
@@ -251,6 +316,11 @@
 				}
 			}
 
+			&:first-of-type {
+				border: none;
+				padding-top: 70px;
+			}
+
 			&.main {
 				.news-item-container {
 					display: block;
@@ -276,13 +346,15 @@
 
 	.announcements {
 		float: left;
-		width: 30%;
+		width: 35%;
 		padding-left: 40px;
 
 		.announcements-item {
 			width: 100%;
 			display: block;
-			margin-top: 70px;
+			// margin-top: 70px;
+			padding: 40px 0;
+			border-top: 1px solid #f8f9fa;
 
 			.announcements-container {
 				max-height: 125px;
@@ -299,7 +371,6 @@
 				.announcements-date {
 					flex: 1;
 					background: #e3e6ea;
-					// margin-bottom: 4px;
 
 					span {
 						font-size: 32px;
@@ -310,10 +381,15 @@
 			}
 
 			.announcements-title {
-				font-size: 20px;
+				font-size: 26px;
 				font-family: 'AvenirNextBold';
 				color: #000;
 				margin-top: 20px;
+			}
+
+			&:first-of-type {
+				padding-top: 70px;
+				border: none;
 			}
 
 			&:hover {
@@ -348,6 +424,7 @@
 			flex: 1;
 			position: relative;
 			background-size: cover;
+			overflow: hidden;
 
 			.values-item-overlay {
 				position: absolute;
@@ -362,29 +439,46 @@
 				.values-title {
 					font-size: 24px;
 					font-family: 'AvenirNextBold';
-					margin-bottom: 30px;
 					transition: 0.3s;
+					color: #000;
 				}
 
 				.values-text {
 					color: #000;
+					height: 0;
+					overflow: hidden;
 					transition: 0.3s;
-				}
-
-				&:hover {
-					background: rgba(255, 255, 255, 0);
-					.values-title {
-						color: #ffe206;
-					}
-
-					.values-text {
-						color: #fff;
-					}
 				}
 			}
 
 			&.value-opacity {
 				background-image: url('../images/value1.jpg');
+				filter: grayscale(100%);
+			}
+
+			&:hover {
+				filter: none;
+				.values-item-overlay { 
+					background: rgba(255, 255, 255, 0);
+					.values-title {
+						margin-bottom: 30px;
+						color: #ffe206;
+
+						// span:after {
+						// 	content: '';
+						// 	display: block;
+						// 	height: 1px;
+						// 	width: 100%;
+						// 	background: rgba(255, 255, 255, 0.2);
+						// }
+					}
+
+					.values-text {
+						color: #fff;
+						height: 75px;
+						overflow: auto;
+					}
+				}
 			}
 		}
 	}
@@ -399,6 +493,19 @@
 		background-size: cover;
 		padding: 40px;
 
+		.section-header {
+			margin: 0;
+		}
+
+		.about-text {
+			color: #fff;
+			height: 0;
+			overflow: hidden;
+			transition: 0.3s;
+			margin-top: 20px;
+			font-size: 16px;
+		}
+
 		&.about-team {
 			background-image: url('../images/team.jpg');
 		}
@@ -411,10 +518,18 @@
 				color: $color-yellow;
 			}
 
+			.about-text {
+				height: 60px;
+				overflow: auto;
+			}
+
 			.lines-before {
-				border-left: 3px solid $color-yellow;
+				// border-left: 3px solid $color-yellow;
 
 				&:before {
+					background: $color-yellow;
+				}
+				&:after {
 					background: $color-yellow;
 				}
 			}
@@ -422,6 +537,18 @@
 	}
 }
 
+
+@keyframes arrow-move {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
 
 
 

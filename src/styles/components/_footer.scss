@@ -33,18 +33,21 @@ footer {
 
 	.footer-project {
 		padding: 70px 40px;
+		flex: 1;
 
 		img {
 			width: 100%;
+			max-width: 750px;
 		}
 
 		.footer-project-text {
 			margin-top: 25px;
+			max-width: 750px;
 			color: rgba(0, 0, 0, 0.6);
 		}
 
 		.footer-auth {
-			color: rgba(0, 0, 0, 0.6);
+			color: rgba(0, 0, 0, 0.4);
 			&:hover {
 				color: $color-blue;
 			}

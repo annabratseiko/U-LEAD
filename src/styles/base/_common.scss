@@ -28,7 +28,7 @@
 
 .lines-before {
 	color: #fff;
-	border-left: 3px solid #fff;
+	// border-left: 3px solid #fff;
 	padding-left: 10px; 
 	position: relative;
 	margin-left: 13px;
@@ -39,15 +39,29 @@
 		width: 6px;
 		background: #fff;
 		position: absolute;
-		top: 0;
-		bottom: 0;
+		top: 5px;
+		bottom: 14px;
 		left: -13px;
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		width: 3px;
+		background: #fff;
+		position: absolute;
+		top: 5px;
+		bottom: 14px;
+		left: -3px;
 	}
 
 	&.dark {
 		color: #000;
-		border-left: 3px solid #000;
+		// border-left: 3px solid #000;
 		&:before {
+			background: #000;
+		}
+		&:after {
 			background: #000;
 		}
 	}
@@ -74,9 +88,10 @@
 .section-header {
   text-transform: uppercase;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 38px;
 	color: #fff;
-	font-family: 'AvenirNextBold';
+	// font-family: 'AvenirNextBold';
+	font-family: 'DINProBold';
 
 	&.dark {
 		color: #000;
