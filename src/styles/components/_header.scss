@@ -11,15 +11,27 @@ header {
 			font-size: 24px;
 			color: $color-blue;
 			font-family: 'AvenirNextBold';
+			display: inline-block;
+
+			@media screen and (max-width: $break-1360) {
+				display: block;
+			}
 		}
 
 		.logo-subtitle {
 			font-size: 11px;
 			font-family: 'AvenirNextMedium';
 			color: #000;
+			display: inline-block;
+			margin-left: 20px;
 
 			span {
 				display: block;
+			}
+
+			@media screen and (max-width: $break-1360) {
+				display: block;
+				margin-left: 0;
 			}
 		}
 	}
@@ -39,22 +51,36 @@ header {
 					color: $color-blue;
 					text-decoration: underline;
 				}
+
+				@media screen and (max-width: $break-1360) {
+					font-size: 15px;
+				}
 			}
+		}
+
+		@media screen and (max-width: $break-1024) {
+			display: none;
 		}
 	}
 
 	.header-language {
+		height: 100%;
 		padding: 0 25px;
-		border-right: 1px solid #e0e0e0;
 
 		a {
 			color: #e0e0e0;
 			font-family: 'DINProLight';
 		}
+
+		@media screen and (max-width: $break-768) {
+			display: none;
+		}
 	}
 
 	.header-social {
+		height: 100%;
 		padding: 0 25px;
+		border-left: 1px solid #e0e0e0;
 
 		a {
 			display: inline-block;
@@ -74,5 +100,39 @@ header {
 				background: $color-yellow;
 			}
 		}
+
+		@media screen and (max-width: $break-480) {
+			display: none;
+		}
+	}
+
+	.header-mobile-menu {
+		display: none;
+		padding: 0 25px;
+		border-left: 1px solid #e0e0e0;
+		height: 100%;
+
+		a {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background: $color-blue;
+			color: #fff;
+			text-align: center;
+			line-height: 30px;
+
+			&:hover {
+				background: $color-yellow;
+			}
+		}
+
+		@media screen and (max-width: $break-1024) {
+			display: flex;
+		}
+	}
+
+	@media screen and (max-width: $break-1024) {
+		justify-content: space-between;
 	}
 }

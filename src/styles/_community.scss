@@ -17,6 +17,23 @@
 			margin: 100px 0;
 			color: #fff;
 			font-family: 'DINProBold';
+
+			@media screen and (max-width: $break-1360) {
+				font-size: 60px;
+			}
+
+			@media screen and (max-width: $break-1024) {
+				text-align: center;
+				margin: 60px 0;
+			}
+
+			@media screen and (max-width: $break-768) {
+				font-size: 44px;
+			}
+
+			@media screen and (max-width: $break-480) {
+				font-size: 32px;
+			}
 		}
 
 		.info-text {
@@ -24,11 +41,16 @@
 			font-size: 16px;
 			line-height: 50px;
 			color: #fff;
-			max-width: 480px;
+			max-width: 445px;
 
 			.info-text-name {
 				display: inline-block;
 				min-width: 265px;
+				width: 50%;
+
+				@media screen and (max-width: $break-480) {
+					min-width: 162px;
+				}
 			}
 
 			.info-value {
@@ -38,6 +60,18 @@
 			&:last-of-type {
 				border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 			}
+
+			@media screen and (max-width: $break-1024) {
+				margin: 0 auto;
+			}
+
+			@media screen and (max-width: $break-480) {
+				font-size: 14px;
+			}
+		}
+
+		@media screen and (max-width: $break-1024) {
+			padding-bottom: 75px;
 		}
 	}
 
@@ -54,11 +88,15 @@
 		line-height: 37px;
 		text-align: center;
 		font-size: 24px;
+
+		@media screen and (max-width: $break-1024) {
+			bottom: 15px;
+		}
 	}
 }	
 
 .community-section {
-	padding: 100px 0;
+	padding: 100px 20px;
 	max-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -76,8 +114,12 @@
 		.community-slider {
 			margin: 50px 0 90px;
 			width: 100%;
-			height: 300px;
+			max-height: 300px;
 			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
 
 			.swiper-container,
 			.swiper-wrapper,
@@ -96,10 +138,35 @@
 			.community-contacts-item {
 				font-size: 18px;
 				margin-top: 40px;
+				overflow: hidden;
 
 				span {
 					display: inline-block;
-					min-width: 170px;
+					min-width: 145px;
+
+					@media screen and (max-width: 1200px) {
+						display: block;
+					}
+
+					@media screen and (max-width: $break-1024) {
+						display: inline-block;
+					}
+
+					@media screen and (max-width: $break-768) {
+						display: block;
+					}
+				}
+
+				@media screen and (max-width: 1200px) {
+					margin-top: 25px;
+				}
+
+				@media screen and (max-width: $break-1024) {
+					margin-top: 40px;
+				}
+
+				@media screen and (max-width: $break-768) {
+					margin-top: 25px;
 				}
 
 				a {
@@ -111,7 +178,8 @@
 
 		.news-item {
 			overflow: hidden;
-			margin-top: 70px;
+			padding: 40px 0;
+    		border-top: 1px solid #f8f9fa;
 			display: flex;
 			flex: 1;
 
@@ -120,6 +188,10 @@
 				margin-right: 30px;
 
 				img {
+					width: 100%;
+				}
+
+				@media screen and (max-width: $break-480) {
 					width: 100%;
 				}
 			}
@@ -147,12 +219,32 @@
 				}
 			}
 
+			&:first-of-type {
+			    padding-top: 70px;
+			    border: none;
+
+			    @media screen and (max-width: $break-768) {
+			    	padding: 40px 0;
+    				border-bottom: 1px solid #f8f9fa;
+			    }
+			}
+
 			&:hover {
 				.text-container {
 					.news-item-title {
 						color: $color-blue;
 					}
 				}
+			}
+
+			@media screen and (max-width: $break-1024) {
+		    	padding: 40px 0;
+		    	border-top: 0;
+				border-bottom: 1px solid #f8f9fa;
+		    }
+
+			@media screen and (max-width: $break-480) {
+				display: block;
 			}
 		}
 
@@ -176,10 +268,24 @@
 				border: 1px solid #2797c9;
 				vertical-align: middle;
 			}
+
+			@media screen and (max-width: $break-1024) {
+				margin-top: 45px;
+			}
 		}
 
 		&.about-community {
 			padding-right: 75px;
+
+			@media screen and (max-width: $break-1024) {
+				padding-right: 0;
+				margin-bottom: 90px;
+			}
+		}
+
+		@media screen and (max-width: $break-1024) {
+			float: none;
+			width: 100%;
 		}
 	}
 }

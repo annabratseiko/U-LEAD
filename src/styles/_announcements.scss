@@ -8,6 +8,22 @@
 		font-size: 98px;
 		color: #fff;
 		font-family: 'DINProBold';
+
+		@media screen and (max-width: $break-1360) {
+			font-size: 60px;
+		}
+
+		@media screen and (max-width: $break-768) {
+			font-size: 44px;
+		}
+	}
+
+	@media screen and (max-width: $break-1360) {
+		min-height: 350px;
+	}
+
+	@media screen and (max-width: $break-480) {
+		min-height: 200px;
 	}
 }
 
@@ -26,7 +42,8 @@
 		.announcements-item {
 			width: 100%;
 			display: block;
-			margin-top: 70px;
+			padding: 40px 0;
+    		border-top: 1px solid #f8f9fa;
 
 			.announcements-container {
 				overflow: hidden;
@@ -44,18 +61,44 @@
 					background: #e3e6ea;
 
 					span {
-						font-size: 32px;
+						font-size: 46px;
 						color: #fff;
 						font-family: 'AvenirNextBold';
+
+						@media screen and (max-width: $break-1024) {
+							font-size: 36px;
+						}
+
+						@media screen and (max-width: $break-768) {
+							font-size: 46px;
+						}
+
+						@media screen and (max-width: $break-480) {
+							font-size: 32px;
+						}
 					}
 				}
 			}
 
 			.announcements-title {
-				font-size: 20px;
+				font-size: 27px;
 				font-family: 'AvenirNextBold';
 				color: #000;
 				margin-top: 20px;
+
+				@media screen and (max-width: $break-1024) {
+					font-size: 22px;
+				}
+			}
+
+			&:first-of-type {
+			    padding-top: 70px;
+			    border: none;
+
+			    @media screen and (max-width: $break-768) {
+			    	padding: 40px 0;
+    				border-bottom: 1px solid #f8f9fa;
+			    }
 			}
 
 			&:hover {
@@ -63,6 +106,25 @@
 					color: $color-blue;
 				}
 			}
+
+			@media screen and (max-width: $break-768) {
+		    	padding: 40px 0;
+		    	border-top: 0;
+				border-bottom: 1px solid #f8f9fa;
+		    }
 		}
+
+		@media screen and (max-width: $break-768) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: $break-1360) {
+		padding: 15px 0 150px;
+	}
+
+	@media screen and (max-width: $break-480) {
+		padding: 20px 0 50px;
 	}
 }

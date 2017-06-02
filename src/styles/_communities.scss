@@ -8,6 +8,22 @@
 		font-size: 98px;
 		color: #fff;
 		font-family: 'DINProBold';
+
+		@media screen and (max-width: $break-1360) {
+			font-size: 60px;
+		}
+
+		@media screen and (max-width: $break-768) {
+			font-size: 44px;
+		}
+	}
+
+	@media screen and (max-width: $break-1360) {
+		min-height: 350px;
+	}
+
+	@media screen and (max-width: $break-480) {
+		min-height: 200px;
 	}
 }
 
@@ -50,6 +66,15 @@
 						display: inline-block;
 						min-width: 245px;
 						opacity: 0.6;
+
+						@media screen and (max-width: $break-1024) {
+							min-width: 200px;
+							width: 50%;
+						}
+
+						@media screen and (max-width: $break-480) {
+							min-width: 155px;
+						}
 					}
 
 					.info-value {
@@ -59,8 +84,25 @@
 					&:last-of-type {
 						border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 					}
+
+					@media screen and (max-width: $break-1024) {
+						font-size: 15px;
+					}
+
+					@media screen and (max-width: $break-480) {
+						font-size: 12px;
+					}
 				}
 			}
 		}
+
+		@media screen and (max-width: $break-768) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: $break-768) {
+		padding: 50px 0;
 	}
 }

@@ -10,6 +10,14 @@
 		h2 {
 			font-size: 58px;
 			font-family: 'DINProBold';
+
+			@media screen and (max-width: $break-1024) {
+				font-size: 36px;
+			}
+
+			@media screen and (max-width: $break-480) {
+				font-size: 28px;
+			}
 		}
 
 		.publication-header-date {
@@ -23,6 +31,10 @@
 		.publication-header-text {
 			font-size: 26px;
 			margin-top: 40px;
+
+			@media screen and (max-width: $break-480) {
+				font-size: 20px;
+			}
 		}
 	}
 }
@@ -58,6 +70,14 @@
 			line-height: 30px;
 			margin-top: 50px;
 		}
+
+		@media screen and (max-width: $break-768) {
+			max-width: 415px;
+		}
+
+		@media screen and (max-width: $break-480) {
+			max-width: 285px;
+		}
 	}
 
 	.publication-image {
@@ -66,6 +86,10 @@
 		img {
 			width: 100%;
 		}
+	}
+
+	@media screen and (max-width: $break-768) {
+		padding: 50px 0;
 	}
 }
 
@@ -77,5 +101,13 @@
 	span {
 		font-size: 24px;
 		font-family: 'AvenirNextBold';
+	}
+
+	@media screen and (max-width: $break-768) {
+		max-width: 415px;
+	}
+
+	@media screen and (max-width: $break-480) {
+		max-width: 285px;
 	}
 }

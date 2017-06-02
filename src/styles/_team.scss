@@ -8,10 +8,26 @@
 	h2 {
 		font-size: 98px;
 		font-family: 'DINProBold';
+
+		@media screen and (max-width: $break-1360) {
+			font-size: 60px;
+		}
+
+		@media screen and (max-width: $break-768) {
+			font-size: 44px;
+		}
 	}
 
 	p {
 		font-size: 28px;
+	}
+
+	@media screen and (max-width: $break-1360) {
+		min-height: 350px;
+	}
+
+	@media screen and (max-width: $break-480) {
+		min-height: 200px;
 	}
 }
 
@@ -30,6 +46,14 @@
 
 			img {
 				width: 100%;
+			}
+
+			@media screen and (max-width: $break-1360) {
+				width: 190px;
+			}
+
+			@media screen and (max-width: 520px) {
+				width: 250px;
 			}
 		}
 
@@ -60,5 +84,9 @@
 		}
 
 
+	}
+
+	@media screen and (max-width: $break-480) {
+		padding: 50px 0;
 	}
 }

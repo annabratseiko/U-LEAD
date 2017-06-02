@@ -18,6 +18,26 @@
 				width: 150px;
 				margin: 0 auto;
 				fill: #fff;
+
+				@media screen and (max-width: $break-768) {
+					width: 125px;
+					margin-top: -10px;
+				}
+
+				@media screen and (max-width: $break-480) {
+					width: 55px;
+					margin-top: -60px;
+				}
+			}
+
+			@media screen and (max-width: $break-768) {
+				width: 180px;
+				height: 180px;
+			}
+
+			@media screen and (max-width: $break-480) {
+				width: 80px;
+				height: 80px;
 			}
 		}
 
@@ -28,6 +48,18 @@
 			font-size: 58px;
 			color: #fff;
 			font-family: 'DINProBold';
+
+			@media screen and (max-width: $break-1360) {
+				font-size: 60px;
+			}
+
+			@media screen and (max-width: $break-768) {
+				font-size: 44px;
+			}
+
+			@media screen and (max-width: $break-480) {
+				font-size: 32px;
+			}
 		}
 	}
 
@@ -50,6 +82,13 @@
 					margin-left: 5px;
 				}
 			}
+
+			@media screen and (max-width: $break-768) {
+				border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+				border-right: 0;
+				width: 100%;
+				padding: 0 20px;
+			}
 		}
 
 		.direction-header-next {
@@ -65,7 +104,22 @@
 					margin-right: 5px;
 				}
 			}
+
+			@media screen and (max-width: $break-768) {
+				width: 100%;
+				padding: 0 20px;
+			}
 		}
+
+		@media screen and (max-width: $break-768) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+
+	@media screen and (max-width: $break-480) {
+		min-height: 350px;
 	}
 }
 
@@ -74,7 +128,7 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 100px 0;
+	padding: 100px 20px;
 
 	.directions-column {
 		float: left;
@@ -85,11 +139,16 @@
 			font-size: 20px;
 			margin-top: 60px;
 			line-height: 24px;
+
+			@media screen and (max-width: $break-1024) {
+				padding-right: 0;
+			}
 		}
 
 		.news-item {
 			overflow: hidden;
-			margin-top: 70px;
+			padding: 40px 0;
+    		border-top: 1px solid #f8f9fa;
 			display: flex;
 			flex: 1;
 
@@ -98,6 +157,10 @@
 				margin-right: 30px;
 
 				img {
+					width: 100%;
+				}
+
+				@media screen and (max-width: $break-480) {
 					width: 100%;
 				}
 			}
@@ -125,12 +188,32 @@
 				}
 			}
 
+			&:first-of-type {
+			    padding-top: 70px;
+			    border: none;
+
+			    @media screen and (max-width: $break-768) {
+			    	padding: 40px 0;
+    				border-bottom: 1px solid #f8f9fa;
+			    }
+			}
+
 			&:hover {
 				.text-container {
 					.news-item-title {
 						color: $color-blue;
 					}
 				}
+			}
+
+			@media screen and (max-width: $break-1024) {
+		    	padding: 40px 0;
+		    	border-top: 0;
+				border-bottom: 1px solid #f8f9fa;
+		    }
+
+			@media screen and (max-width: $break-480) {
+				display: block;
 			}
 		}
 
@@ -154,6 +237,21 @@
 				border: 1px solid #2797c9;
 				vertical-align: middle;
 			}
+
+			@media screen and (max-width: $break-1024) {
+				margin-top: 45px;
+			}
+		}
+
+
+
+		@media screen and (max-width: $break-1024) {
+			float: none;
+			width: 100%;
+
+			&:first-of-type {
+				margin-bottom: 70px;
+			}	
 		}
 	}
 }

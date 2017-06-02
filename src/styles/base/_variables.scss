@@ -1,3 +1,11 @@
 $color-blue: #2797c9;
 $section-padding: 90px 40px;
 $color-yellow: #ffe206;
+$break-1360: 1360px;
+$break-1024: 1024px;
+$break-768: 768px;
+$break-480: 480px;
+
+@media screen and (max-width: $break-480) {
+	$section-padding: 50px 20px;
+}

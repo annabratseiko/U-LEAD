@@ -96,4 +96,8 @@
 	&.dark {
 		color: #000;
 	}
+
+	@media screen and (max-width: $break-480) {
+		font-size: 30px;
+	}
 }

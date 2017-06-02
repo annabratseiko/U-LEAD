@@ -6,6 +6,13 @@
 
 	.header-map-image {
 		flex: 1;
+		@media screen and (max-width: $break-1024) {
+			order: 2;
+		}
+
+		@media screen and (max-width: $break-768) {
+			display: none;
+		}
 	}
 
 	.header-map-sidebar {
@@ -98,16 +105,48 @@
 					color: #fff;
 					font-size: 50px;
 
+					@media screen and (max-width: $break-1360) {
+						font-size: 35px;
+					}
+
+					@media screen and (max-width: $break-1024) {
+						border: none;
+						padding-top: 0;
+						margin-top: 0;
+
+						&:before {
+							display: none;
+						}
+					}
+
 					span {
 						font-family: 'AvenirNextBold';
 					}
+				}
+
+				@media screen and (max-width: $break-1360) {
+					padding: 50px 40px 100px;
+				}
+
+				@media screen and (max-width: $break-1024) {
+					width: 50%;
+					float: left;
+					padding: 50px;
+				}
+
+				@media screen and (max-width: $break-768) {
+					width: 100%;
+					float: none;
 				}
 			}
 
 			.header-sidebar-logo {
 				padding-top: 20px;
-			}
 
+				img {
+					width: 100%;
+				}
+			}
 		}
 
 		.header-map-info {
@@ -169,6 +208,15 @@
 			// 	display: block;
 			// }
 		}
+
+		@media screen and (max-width:$break-1360) {
+			min-width: 300px;
+		}
+
+		@media screen and (max-width: $break-1024) {
+			width: 100%;
+			order: 1;
+		}
 	}
 
 	.header-map-scroll-button {
@@ -185,6 +233,14 @@
 		text-align: center;
 		font-size: 24px;
 		animation: arrow-move 0.7s infinite ease-out;
+
+		@media screen and (max-width: $break-768) {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: $break-1024) {
+		flex-direction: column;
 	}
 }
 
@@ -217,6 +273,44 @@
 						width: 90px;
 						margin-top: -15px;
 						fill: #fff;
+
+						@media screen and (max-width:$break-1360) {
+							width: 70px;
+							margin-top: -35px;
+						}
+						@media screen and (max-width: 925px) {
+							width: 100px;
+							margin-top: 0;
+						}
+						@media screen and (max-width: $break-768) {
+							width: 90px;
+							margin-top: -15px;
+						}
+
+						@media screen and (max-width: $break-480) {
+							width: 60px;
+							margin-top: -50px;
+						}
+					}
+
+					@media screen and (max-width:$break-1360) {
+						width: 135px;
+						height: 135px;
+					}
+
+					@media screen and (max-width: 925px) {
+						width: 205px;
+						height: 205px;
+					}
+
+					@media screen and (max-width: $break-768) {
+						width: 175px;
+						height: 175px;
+					}
+
+					@media screen and (max-width: $break-480) {
+						width: 100px;
+						height: 100px;
 					}
 				}
 
@@ -224,6 +318,12 @@
 					font-size: 16px;
 					line-height: 24px;
 					margin-top: 20px;
+
+					@media screen and (max-width: $break-480) {
+						font-size: 14px;
+					    line-height: 19px;
+					    margin-top: 15px;
+					}
 				}
 
 				&:hover {
@@ -236,7 +336,16 @@
 						}
 					}
 				}
+
+				@media screen and (max-width: 925px) {
+					padding-top: 50px;
+				}
 			}
+		}
+
+		@media screen and (max-width: 925px) {
+			flex-wrap: wrap;
+			padding-top: 0;
 		}
 	}
 }
@@ -251,6 +360,8 @@
 		max-width: 850px;
 		margin: 0 auto;
 		line-height: 34px;
+		padding-left: 20px;
+
 
 		span {
 			font-family: 'AvenirNextBold';
@@ -259,7 +370,28 @@
 		&:before,
 		&:after {
 			bottom: 5px;
+			
+			@media screen and (max-width: $break-480) {
+				display: none;
+			}
 		}
+
+		@media screen and (max-width: $break-1360) {
+			max-width: 700px;
+		}
+
+		@media screen and (max-width: $break-768) {
+			max-width: 400px;
+		}
+
+		@media screen and (max-width: $break-480) {
+			max-width: 300px;
+			font-size: 20px;
+		}
+	}
+
+	@media screen and (max-width: $break-768) {
+		padding: 80px 0;
 	}
 }
 
@@ -283,6 +415,17 @@
 
 				span {
 					display: block;
+
+					@media screen and (max-width: $break-768) {
+						display: inline-block;
+						margin-left: 10px;
+					}
+				}
+
+				@media screen and (max-width: $break-768) {
+					width: 100%;
+					order: 2;
+					margin-top: 15px;
 				}
 			}
 
@@ -295,6 +438,11 @@
 
 					img {
 						width: 100%;
+					}
+
+					@media screen and (max-width: $break-768) {
+						width: 100%;
+						margin-bottom: 30px;
 					}
 				}
 
@@ -313,6 +461,10 @@
 						font-size: 16px;
 						color: #000;
 					}
+				}
+
+				@media screen and (max-width: $break-768) {
+					display: block;
 				}
 			}
 
@@ -341,6 +493,14 @@
 					}
 				}
 			}
+
+			@media screen and (max-width: $break-768) {
+				flex-direction: column;
+			}
+		}
+
+		@media screen and (max-width: $break-1024) {
+			width: 100%;
 		}
 	}
 
@@ -405,6 +565,11 @@
 			img {
 				width: 100%;
 			}
+		}
+
+		@media screen and (max-width: $break-1024) {
+			width: 100%;
+			padding-left: 0;
 		}
 	}
 }
@@ -481,6 +646,10 @@
 				}
 			}
 		}
+
+		@media screen and (max-width: $break-1024) {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -533,6 +702,12 @@
 					background: $color-yellow;
 				}
 			}
+		}
+	}
+
+	@media screen and (max-width: $break-1024) {
+		.about-row {
+			flex-direction: column;
 		}
 	}
 }
